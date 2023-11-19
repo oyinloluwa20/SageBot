@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code debugger|RAG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>SageBot</h1>
+        <small>AI Code-Debugger| Retrival Augmented Generation </small>
+    </header>
+
+    <div id="chat-container">
+        <div class="file-manager">
+            <button onclick="createParentFolder()">New Project</button>
+            <button onclick="createChildFile()">New File</button>
+            <h3>Files</h3>
+            <input type="text" id="parentFolderName" placeholder="Project Name">
+            <input type="text" id="childFileName" placeholder="Child File Name">
+            <ul id="fileList"></ul>
+
+        </div>
+        <div class="chat-chat">
+            <div>
+                <div id="action-buttons"></div>
+                <div id="editor" contenteditable="true" style="line-height: 0;">
+                    <h5>Your code goes here.... </h5>
+                    <small>Create a new project</small>
+                    <small>Create a File in it, Save & Debug</small>
+                </div>
+                <div id="chat-messages"></div>
+            </div>
+            <div class="input-container">
+
+                <textarea id="message-input" placeholder="Write Your test, chat with your docs..."></textarea>
+                <button id="input-button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+
+        <div class="upload-area">
+            <input type="file" id="upload-input" accept=".txt, .pdf" />
+            <label for="upload-input" id="upload-label">Upload Document</label>
+            <div id="preview-section">
+                <iframe id="preview-pdf" style="display: none;"></iframe>
+            </div>
+            <div id="file-preview" style="display: none;"></div>
+        </div>
+
+    </div>
+    <script src="script.js" defer></script>
+    <script src="server.js" defer></script>
+
+
+
+</body>
+
+</html>
