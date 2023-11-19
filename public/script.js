@@ -1,18 +1,3 @@
-// const express = require('express');
-// const cors = require('cors')
-// const app = express()
-
-// app.use(cors());
-// app.use(express.urlencoded({ extended: true }))
-// app.get('/', function (req, res) {
-//     try {
-
-//         console.log(req.body)
-//     } catch (error) {
-//         console.log(error)
-//     }
-// })
-
 let selectedItem = null;
 
 function createParentFolder() {
@@ -271,5 +256,3 @@ function displayLLMResponse(response) {
 
 
 
-
-app.listen(5500)
