@@ -4,7 +4,7 @@ dotenv.config();
 
 import { OpenAI } from "langchain/llms/openai";
 import { SerpAPI } from "langchain/tools";
-import { Calculator } from "langchain/tools/calculator";
+// import { Calculator } from "langchain/tools/calculator";
 import { initializeAgentExecutorWithOptions } from "langchain/agents"
 
 const model = new OpenAI({
@@ -17,19 +17,19 @@ const tools = [
         hl: "en",
         gl: "ng"
     }),
-    new Calculator(),
+
 ]
 
 const excutor = await initializeAgentExecutorWithOptions(tools, model, {
     agentType: "zero-shot-react-description",
-
+    verbose: "true"
 
 })
 
 console.log('loaded the agent..')
 
 const res = await excutor.call({
-    input: "what is the present networth of elon"
+    input: "site: stackoverflow.com explain express js, where did you get this result"
 })
 console.log(res.output)
-
+// site: stackoverflow.com
