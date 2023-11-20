@@ -29,7 +29,7 @@ const excutor = await initializeAgentExecutorWithOptions(tools, model, {
 console.log('loaded the agent..')
 
 const res = await excutor.call({
-    input: "site: stackoverflow.com explain express js, where did you get this result"
+    input: "site: stackoverflow.com what is wrong with is my code, async function loadContent(fileItem) {const editor = document.getElementById('editor');editor.innerHTML = '';if (fileItem.dataset.saved) {const content = fileItem.dataset.saved;editor.innerText = content;} else {console.log('No content saved for this file.');}}"
 })
 console.log(res.output)
 // site: stackoverflow.com
