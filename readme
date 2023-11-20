@@ -57,7 +57,8 @@ Installation
 
 6. Open the application in your browser: [http://localhost:3000](http://localhost:3000)
 
-
+7. Due to upload issues the  retrival augment generator notebook can be found at:
+https://github.com/A-l-Mahi/sageBot/blob/main/notebook.ipynb
 
 Usage
 
