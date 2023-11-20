@@ -1,0 +1,96 @@
+SageBot Code Debugger
+
+SageBot is a web application designed to serve as a code debugger with an benefit of retrieval augmented generation. It allows users to create projects, manage files, edit code, and interact with an AI-powered language model for debugging code, the AI model is also supercharged with a custom built langchain agent that has internet connectivity and can accept data from an api endpoint .
+
+Table of Contents
+
+- [Getting Started]
+  - [Prerequisites]
+  - [Installation]
+- [Usage]
+  - [Creating Projects and Files]
+  - [Editing Code]
+  - [Chatting with Docs]
+- [Features]
+- [Contributing]
+- [License]
+
+Getting Started
+
+Prerequisites
+
+- Node.js and npm installed on your machine
+- [OpenAI API Key] (for AI-powered language model functionality)
+
+Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/sagebot.git
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   cd sagebot
+   npm install
+   ```    
+
+3. Set up your OpenAI API Key SERPAPI API Key by creating a `.env` file in the project root:
+
+   ```plaintext
+   OPENAI_API_KEY="your-api-key-here"
+   SERPAPI_API_KEY ="your serpapi-key"
+   ```
+4 run the testAgent to see how llm can be limited to get data from a particular end point(www.stackoverflow.com):
+
+    ```bash
+   node tesAgent
+   ```
+
+5. Start the server:
+
+   ```bash
+   npm start
+   ```
+
+6. Open the application in your browser: [http://localhost:3000](http://localhost:3000)
+
+
+
+Usage
+
+ Creating Projects and Files
+
+- Click "New Project" to create a new project.
+- Click "New File" to create a new file within a project.
+- Enter project and file names in the respective input fields.
+
+Editing Code
+
+- The code editor is in the "Editor" section.
+- Click on a file in the file manager to load its content into the editor.
+- Use the "Save," "Copy," and "Debug" buttons for file actions.
+
+Chatting with Docs
+
+- Use the chat input area to write messages.
+- Attach files by using the file upload feature.
+- Click "Send" to send your message to the server and receive responses.
+
+Features
+
+- Create and manage projects and files.
+- Edit code in a user-friendly editor.
+- Chat with AI for code debugging and generation.
+- File upload for retrival augmented generation.
+
+Contributing
+
+We welcome contributions! If you find a bug, have a feature request, or want to contribute code, email us. oyinloluwa20'GMAIL.COM
+License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
